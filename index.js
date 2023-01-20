@@ -53,11 +53,11 @@ console.log(FCC, fact);
 //Задание 9, 10, 11, 12
 const sum = 10 + 10;
 const difference = 45 - 33;
-const product = 8 * 10;
-const quotient = 66 / 33;
+const productOne = 8 * 10;
+const quotientOne = 66 / 33;
 
 //Задание 13
-let myVar = 87;
+let myVari = 87;
 myVar++;
 
 //Задание 14
