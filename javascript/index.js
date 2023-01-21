@@ -87,38 +87,112 @@ a /= 12;
 b /= 4;
 c /= 11;
 //
-const myStr = 'I am a "double quoted" string inside "double quotes".'; 
+const myStr = 'I am a "double quoted" string inside "double quotes".';
 //
-const myStrN = 'This is the start. '+ 'This is the end.';
-let myN = 'This is the first sentence. ';
-myStr += 'This is the second sentence.'
+const myStrN = "This is the start. " + "This is the end.";
+let myN = "This is the first sentence. ";
+myStr += "This is the second sentence.";
 //
 let lastNameLength = 0;
 const lastName = "Lovelace";
 lastNameLength = lastName;
-lastNameLength=lastName.length;
+lastNameLength = lastName.length;
 
-firstLetterOfLastName = lastName; 
-firstLetterOfLastName = lastName[0]; 
+firstLetterOfLastName = lastName;
+firstLetterOfLastName = lastName[0];
 //
 let myStrt = "Jello World";
-myStr = "Hello World"; 
+myStr = "Hello World";
 //
 const lastName3 = "Lovelace";
 const thirdLetterOfLastName = lastName[2];
 //
 const lastName1 = "Lovelace";
-const lastLetterOfLastName = lastName[lastName.length-1];
+const lastLetterOfLastName = lastName[lastName.length - 1];
 //
 const lastName2 = "Lovelace";
-const secondToLastLetterOfLastName = lastName[lastName.length-2];
+const secondToLastLetterOfLastName = lastName[lastName.length - 2];
 //
-const myArray2 = ['dog', 5];
+const myArray2 = ["dog", 5];
 //
-const myArray1 = [[1,2],[3,4]];
+const myArray1 = [
+  [1, 2],
+  [3, 4],
+];
 //
 const myArray = [50, 60, 70];
 const myData = myArray[0];
 //
 const myArray = [18, 64, 99];
 myArray[0] = 45;
+//
+const myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+myArray.push(["dog", 3]);
+//
+const myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+const removedFromMyArray = myArray.pop();
+//
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+const removedFromMyArray = myArray.shift();
+//
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+myArray.shift();
+myArray.unshift(["Paul", 35]);
+//
+const myList = [
+  ["Chocolate Bar", 15],
+  ["Coca cola", 10],
+  ["Water", 2],
+  ["Banana", 6],
+  ["Cheese", 3],
+];
+//
+function reusableFunction() {
+  console.log("Hi World");
+}
+reusableFunction();
+//
+function functionWithArgs(param1, param2) {
+  console.log(param1 + param2);
+}
+functionWithArgs(1, 2);
+functionWithArgs(7, 9);
+//
+function timesFive(num) {
+  return num * 5;
+}
+//
+const myGlobal = 10;
+function fun1() {
+  oopsGlobal = 5;
+}
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+//
+function myLocalScope() {
+  const myVar = 1;
+  console.log("inside myLocalScope", myVar);
+}
+myLocalScope();
+console.log("outside myLocalScope", myVar);
+//
