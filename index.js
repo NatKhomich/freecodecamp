@@ -101,12 +101,24 @@ lastNameLength=lastName.length;
 firstLetterOfLastName = lastName; 
 firstLetterOfLastName = lastName[0]; 
 //
-let myStr = "Jello World";
+let myStrt = "Jello World";
 myStr = "Hello World"; 
 //
-const lastName = "Lovelace";
+const lastName3 = "Lovelace";
 const thirdLetterOfLastName = lastName[2];
 //
-const lastName = "Lovelace";
+const lastName1 = "Lovelace";
 const lastLetterOfLastName = lastName[lastName.length-1];
 //
+const lastName2 = "Lovelace";
+const secondToLastLetterOfLastName = lastName[lastName.length-2];
+//
+const myArray2 = ['dog', 5];
+//
+const myArray1 = [[1,2],[3,4]];
+//
+const myArray = [50, 60, 70];
+const myData = myArray[0];
+//
+const myArray = [18, 64, 99];
+myArray[0] = 45;
