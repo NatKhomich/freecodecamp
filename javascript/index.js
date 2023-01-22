@@ -39,7 +39,7 @@ let fact = "is cool!";
 fact = "is awesome!";
 console.log(FCC, fact);
 //
-const sum = 10 + 10;
+const per = 10 + 10;
 const difference = 45 - 33;
 const productOne = 8 * 10;
 const quotientOne = 66 / 33;
@@ -120,31 +120,31 @@ const myArray1 = [
   [3, 4],
 ];
 //
-const myArray = [50, 60, 70];
+const myArray8 = [50, 60, 70];
 const myData = myArray[0];
 //
 const myArray = [18, 64, 99];
 myArray[0] = 45;
 //
-const myArray = [
+const myArray7 = [
   ["John", 23],
   ["cat", 2],
 ];
 myArray.push(["dog", 3]);
 //
-const myArray = [
+const myArray6 = [
   ["John", 23],
   ["cat", 2],
 ];
 const removedFromMyArray = myArray.pop();
 //
-const myArray = [
+const myArray5 = [
   ["John", 23],
   ["dog", 3],
 ];
-const removedFromMyArray = myArray.shift();
+const removedFromMyArray1 = myArray.shift();
 //
-const myArray = [
+const myArray4 = [
   ["John", 23],
   ["dog", 3],
 ];
@@ -213,3 +213,4 @@ function addFive () {
 addThree();
 addFive();
 //
+
