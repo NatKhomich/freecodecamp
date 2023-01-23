@@ -233,4 +233,59 @@ if (wasThatTrue){
 return 'No, that was false'
 }
 //
+function testEqual(val) {
+  if (val==12) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testEqual(10);
+//
+function compareEquality(a, b) {
+  if (a === b) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+compareEquality(10, "10");
+//
+function testNotEqual(val) {
+  if (val!=99) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testNotEqual(10);
+//
+function testGreaterThan(val) {
+  if (val>100) { 
+    return "Over 100";
+  }
+  if (val>10) { 
+    return "Over 10";
+  }
+  return "10 or Under";
+}
+testGreaterThan(10);
+//
+function testLogicalAnd(val) {
+  if (val<=50 && val>=25) {
+      return "Yes";
+    }
+  return "No";
+}
+testLogicalAnd(10);
+//
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  }
+  else if (val < 5) {
+    return "Smaller than 5";
+  } else { 
+  return "Between 5 and 10";
+  }
+}
+testElseIf(7);
+//
 
