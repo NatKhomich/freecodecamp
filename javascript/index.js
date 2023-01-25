@@ -198,7 +198,7 @@ console.log("outside myLocalScope", myVar);
 //
 const outerWear = "T-Shirt";
 function myOutfit() {
-const outerWear = "sweater";
+  const outerWear = "sweater";
   return outerWear;
 }
 myOutfit();
@@ -207,14 +207,14 @@ let sum = 0;
 function addThree() {
   sum = sum + 3;
 }
-function addFive () {
-  sum = sum+5;
+function addFive() {
+  sum = sum + 5;
 }
 addThree();
 addFive();
 //
 function nextInLine(arr, item) {
-  arr.push (item);
+  arr.push(item);
   return arr.shift();
 }
 let testArr = [1, 2, 3, 4, 5];
@@ -227,14 +227,14 @@ function welcomeToBooleans() {
 }
 //
 function trueOrFalse(wasThatTrue) {
-if (wasThatTrue){
-  return 'Yes, that was true'
-}
-return 'No, that was false'
+  if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
 }
 //
 function testEqual(val) {
-  if (val==12) {
+  if (val == 12) {
     return "Equal";
   }
   return "Not Equal";
@@ -242,7 +242,7 @@ function testEqual(val) {
 testEqual(10);
 //
 function compareEquality(a, b) {
-  if (a === b) { 
+  if (a === b) {
     return "Equal";
   }
   return "Not Equal";
@@ -250,7 +250,7 @@ function compareEquality(a, b) {
 compareEquality(10, "10");
 //
 function testNotEqual(val) {
-  if (val!=99) {
+  if (val != 99) {
     return "Not Equal";
   }
   return "Equal";
@@ -258,10 +258,10 @@ function testNotEqual(val) {
 testNotEqual(10);
 //
 function testGreaterThan(val) {
-  if (val>100) { 
+  if (val > 100) {
     return "Over 100";
   }
-  if (val>10) { 
+  if (val > 10) {
     return "Over 10";
   }
   return "10 or Under";
@@ -269,9 +269,9 @@ function testGreaterThan(val) {
 testGreaterThan(10);
 //
 function testLogicalAnd(val) {
-  if (val<=50 && val>=25) {
-      return "Yes";
-    }
+  if (val <= 50 && val >= 25) {
+    return "Yes";
+  }
   return "No";
 }
 testLogicalAnd(10);
@@ -279,11 +279,10 @@ testLogicalAnd(10);
 function testElseIf(val) {
   if (val > 10) {
     return "Greater than 10";
-  }
-  else if (val < 5) {
+  } else if (val < 5) {
     return "Smaller than 5";
-  } else { 
-  return "Between 5 and 10";
+  } else {
+    return "Between 5 and 10";
   }
 }
 testElseIf(7);
@@ -291,12 +290,10 @@ testElseIf(7);
 function testElseIf(val) {
   if (val > 10) {
     return "Greater than 10";
-  }
-  else if (val < 5) {
+  } else if (val < 5) {
     return "Smaller than 5";
-  }
-  else {
- return "Between 5 and 10";
+  } else {
+    return "Between 5 and 10";
   }
 }
 testElseIf(7);
@@ -304,8 +301,7 @@ testElseIf(7);
 function orderMyLogic(val) {
   if (val < 5) {
     return "Less than 5";
-  } 
-  else if (val < 10) {
+  } else if (val < 10) {
     return "Less than 10";
   } else {
     return "Greater than or equal to 10";
@@ -314,20 +310,39 @@ function orderMyLogic(val) {
 orderMyLogic(7);
 //
 function testSize(num) {
-if (num<5){
-  return 'Tiny'
-} else if (num<10) {
-  return 'Small'
-} else if (num<15) {
-  return 'Medium'
-} else if (num<20) {
-  return 'Large'
-} else if (num>=20) {
-  return 'Huge'
-} else {
-return "Change Me";
+  if (num < 5) {
+    return "Tiny";
+  } else if (num < 10) {
+    return "Small";
+  } else if (num < 15) {
+    return "Medium";
+  } else if (num < 20) {
+    return "Large";
+  } else if (num >= 20) {
+    return "Huge";
+  } else {
+    return "Change Me";
   }
 }
 testSize(7);
 //
-
+function caseInSwitch(val) {
+  let answer = "";
+  switch (val) {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "beta";
+      break;
+    case 3:
+      answer = "gamma";
+      break;
+    case 4:
+      answer = "delta";
+      break;
+  }
+  return answer;
+}
+caseInSwitch(1);
+//
