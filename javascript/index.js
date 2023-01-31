@@ -442,3 +442,19 @@ const testObj = {
 const hatValue = testObj.hat;
 const shirtValue = testObj.shirt;
 //
+const testObj1 = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water",
+};
+const entreeValue = testObj1["an entree"];
+const drinkValue = testObj1["the drink"];
+//
+const testObj3 = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+const playerNumber = 16; 
+const player = testObj3[playerNumber]; 
+//
