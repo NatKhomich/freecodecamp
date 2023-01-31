@@ -427,4 +427,18 @@ function cc(card) {
   return count + " " + holdbet;
 }
 //
-
+const myDog = {
+  name: "Bonya",
+  legs: 4,
+  tails: 1,
+  friends: ["Natalya", "Alex"],
+};
+//
+const testObj = {
+  hat: "ballcap",
+  shirt: "jersey",
+  shoes: "cleats",
+};
+const hatValue = testObj.hat;
+const shirtValue = testObj.shirt;
+//
