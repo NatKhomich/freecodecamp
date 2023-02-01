@@ -466,3 +466,11 @@ const myDog1 = {
 };
 myDog1.name = 'Happy Coder'
 //
+const myDog1 = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+myDog1.bark = 'Woff woff';
+//
