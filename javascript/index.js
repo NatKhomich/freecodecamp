@@ -474,3 +474,12 @@ const myDog1 = {
 };
 myDog1.bark = 'Woff woff';
 //
+const myDog2 = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+delete myDog2.tails;
+//
