@@ -453,33 +453,49 @@ const drinkValue = testObj1["the drink"];
 const testObj3 = {
   12: "Namath",
   16: "Montana",
-  19: "Unitas"
+  19: "Unitas",
 };
-const playerNumber = 16; 
-const player = testObj3[playerNumber]; 
+const playerNumber = 16;
+const player = testObj3[playerNumber];
 //
 const myDog1 = {
-  "name": "Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["freeCodeCamp Campers"]
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
 };
-myDog1.name = 'Happy Coder'
+myDog1.name = "Happy Coder";
 //
 const myDog1 = {
-  "name": "Happy Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["freeCodeCamp Campers"]
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
 };
-myDog1.bark = 'Woff woff';
+myDog1.bark = "Woff woff";
 //
 const myDog2 = {
-  "name": "Happy Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["freeCodeCamp Campers"],
-  "bark": "woof"
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+  bark: "woof",
 };
 delete myDog2.tails;
 //
+function phoneticLookup(val) {
+  let result = "";
+  var lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank",
+  };
+  result = lookup[val];
+  return result;
+}
+phoneticLookup("charlie");
+//
+
